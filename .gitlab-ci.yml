@@ -1,0 +1,20 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  image: python:3.11-slim
+  before_script:
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+    - apt-get update && apt-get install -y openjdk-11-jre wget
+    - wget https://github.com/allure-framework/allure2/releases/download/2.26.0/allure-2.26.0.tgz
+    - tar -xzf allure-2.26.0.tgz
+    - cp -r allure-2.26.0 /opt/
+    - ln -s /opt/allure-2.26.0/bin/allure /usr/bin/allure
+  script:
+    - pytest tests/ --alluredir=allure-results
+  artifacts:
+    paths:
+      - allure-results/
+    expire_in: 1 week

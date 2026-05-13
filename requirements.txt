@@ -1,0 +1,3 @@
+pytest>=8.4.0
+allure-pytest>=2.14.0
+requests-mock==1.12.1
