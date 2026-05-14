@@ -28,3 +28,4 @@ class TestExample:
     @pytest.mark.xfail(reason="预期会失败的测试")
     def test_expected_failure(self):
         assert 1 == 2
+    # add an annotation
