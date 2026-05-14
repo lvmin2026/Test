@@ -1,5 +1,10 @@
 name: CI/CD Pipeline
 
+permissions:
+  contents: write  # 允许写入仓库内容（推送gh-pages分支）
+  pages: write
+  id-token: write
+
 on:
   push:
     branches: [ main, develop ]
