@@ -16,6 +16,7 @@ class TestExample:
         text = "Hello World"
         assert len(text) == 11
 
+    @pytest.mark.P0
     def test_list_contains(self, setup_function):
         my_list = [1, 2, 3, 4, 5]
         assert 3 in my_list
