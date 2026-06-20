@@ -1,9 +1,12 @@
 import requests
 import pytest
+import allure
 
 
 @pytest.mark.test_data("test_data_002.json")
-def test_weather_api_v2(test_data_item, setup_function):
+def test_weather_api_v2(test_data_item):
+
+    allure.dynamic.title("测试天气API_002")
     api_url = "https://eolink.o.apispace.com/456456/weather/v001/day"
     api_token = "45ecp7iama8hbqopizgz5dhhw1v1l3sc"
     timeout = 10

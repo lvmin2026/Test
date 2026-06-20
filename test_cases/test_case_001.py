@@ -4,21 +4,19 @@ import allure
 
 
 @pytest.mark.test_data("test_data_001.json")
-def test_weather_api(test_data_item, setup_function):
-    testcase_name = test_data_item.get("testcase_name", "Unnamed Test")
-    requests_params = test_data_item["requests_params"]
-    assert_content = test_data_item["assert_content"]
+def test_weather_api(test_data_item):
+
     
-    allure.dynamic.title(testcase_name)
-    allure.dynamic.description(
-        f"测试天气API\n"
-        f"请求参数: {requests_params}\n"
-        f"预期结果: {assert_content}"
-    )
+    allure.dynamic.title("测试天气API_001")
+
 
     api_url = "https://eolink.o.apispace.com/456456/weather/v001/day"
     api_token = "45ecp7iama8hbqopizgz5dhhw1v1l3sc"
     timeout = 10
+
+
+    requests_params = test_data_item["requests_params"]
+    assert_content = test_data_item["assert_content"]
 
     headers = {"X-APISpace-Token": api_token}
     response = requests.get(
