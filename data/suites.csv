@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jun 20 07:40:32 UTC 2026","Sat Jun 20 07:40:33 UTC 2026","1040","test_cases","test_case_002","","","","测试天气API_002",""
+"passed","Sat Jun 20 04:15:35 UTC 2026","Sat Jun 20 06:32:37 UTC 2026","8221984","","","","","","test_weather_api[test_data_001.json[0]]",""
+"passed","Sat Jun 20 07:40:30 UTC 2026","Sat Jun 20 07:40:31 UTC 2026","1067","test_cases","test_case_001","","","","测试天气API_001",""
+"passed","Sat Jun 20 07:40:31 UTC 2026","Sat Jun 20 07:40:32 UTC 2026","1065","test_cases","test_case_001","","","","测试天气API_001",""
