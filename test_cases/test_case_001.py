@@ -3,7 +3,7 @@ import pytest
 
 
 @pytest.mark.test_data("test_data_001.json")
-def test_weather_api(test_data_item, setup_function):
+def test_weather_api(test_data_item):
     api_url = "https://eolink.o.apispace.com/456456/weather/v001/day"
     api_token = "45ecp7iama8hbqopizgz5dhhw1v1l3sc"
     timeout = 10
