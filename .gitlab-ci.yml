@@ -13,7 +13,7 @@ test_job:
     - cp -r allure-2.26.0 /opt/
     - ln -s /opt/allure-2.26.0/bin/allure /usr/bin/allure
   script:
-    - pytest tests/ --alluredir=allure-results
+    - pytest test_cases/ --alluredir=allure-results
   artifacts:
     paths:
       - allure-results/
