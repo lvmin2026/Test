@@ -1,5 +1,6 @@
 [
   {
+    "testcase_name": "test_weather_api_002_01",
     "requests_params": {
       "areacode": "101011000",
       "days": "1"

@@ -1,5 +1,6 @@
 [
   {
+    "testcase_name": "test_weather_api_001_01",
     "requests_params": {
       "areacode": "101011000",
       "days": "1"
@@ -7,10 +8,11 @@
     "assert_content": "石景山"
   },
   {
+    "testcase_name": "test_weather_api_001_02",
     "requests_params": {
       "areacode": "101011000",
       "days": "1"
     },
-    "assert_content": "石景"
+    "assert_content": "石景山"
   }
 ]
