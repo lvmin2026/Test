@@ -1,0 +1,9 @@
+[
+  {
+    "requests_params": {
+      "areacode": "101011000",
+      "days": "1"
+    },
+    "assert_content": "石景山"
+  }
+]
